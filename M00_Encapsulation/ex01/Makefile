@@ -9,7 +9,7 @@ BKGRAYRED=\033[1;91m
 # 									Executable	 	 						   #
 ################################################################################
 
-NAME = m00_ex00
+NAME = m00_ex01
 
 ################################################################################
 # 							Dir	Path	Variables 							   #
@@ -32,7 +32,7 @@ RMD = rm -rf
 # 							Files	Path	Variables 						   #
 ################################################################################
 
-SRC = $(addprefix $(SRCDIR)/, Account.cpp  AccountUUID.cpp  Money.cpp Bank.cpp main.cpp)
+SRC = $(addprefix $(SRCDIR)/, main.cpp)
 OBJ = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SRC))
 
 ################################################################################
@@ -43,11 +43,11 @@ all: $(NAME)
 
 clean:
 	@if [ -d "$(OBJDIR)" ]; then $(RMD) $(OBJDIR); fi
-	@echo "${BKGRAY}M00_Ex00_Encapsulation:${BKGRAYRED}- Obj${RESET}"
+	@echo "${BKGRAY}M00_Ex01_Encapsulation:${BKGRAYRED}- Obj${RESET}"
 
 fclean: clean
 	$(RM) $(NAME)
-	@echo "${BKGRAY}M00_Ex00_Encapsulation: ${BKGRAYRED}- Exec${RESET}"
+	@echo "${BKGRAY}M00_Ex01_Encapsulation: ${BKGRAYRED}- Exec${RESET}"
 
 re: fclean all
 

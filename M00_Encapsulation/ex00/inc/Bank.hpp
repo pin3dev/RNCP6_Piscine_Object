@@ -17,21 +17,22 @@ class Bank {
         ~Bank();
 
     /**********************************/
-    class Account {
-        private:
-            // Attributes
-            Money               _balance;
+    class Account;
+    // {
+    //     private:
+    //         // Attributes
+    //         Money               _balance;
             
-            // Constructor
-            Account();
-            // Friendship
-            friend class Bank;
-        public:
-            // Destructor
-            ~Account();
-            // Getter
-            const Money &getBalance() const;
-    }; 
+    //         // Constructor
+    //         Account();
+    //         // Friendship
+    //         friend class Bank;
+    //     public:
+    //         // Destructor
+    //         ~Account();
+    //         // Getter
+    //         const Money &getBalance() const;
+    // }; 
     /**********************************/
 
         // APIs about Account
